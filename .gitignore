@@ -1,0 +1,7 @@
+.DS_Store
+
+bin/*
+!bin/data
+
+*.xcuserdatad
+*.xcworkspace
