@@ -3,6 +3,7 @@
 void ofApp::setup(){
 	ofBackground(0);
 	
+	mapper.registerFboSource(game);
 	mapper.setup();
 }
 

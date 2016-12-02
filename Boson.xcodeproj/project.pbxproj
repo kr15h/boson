@@ -122,6 +122,7 @@
 		01EFACD21DF205670049F26B /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01EFACCC1DF205670049F26B /* tinyxmlerror.cpp */; };
 		01EFACD31DF205670049F26B /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01EFACCD1DF205670049F26B /* tinyxmlparser.cpp */; };
 		01EFACD41DF205670049F26B /* ofxXmlSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01EFACCF1DF205670049F26B /* ofxXmlSettings.cpp */; };
+		01EFACD81DF209140049F26B /* BosonSource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01EFACD61DF209140049F26B /* BosonSource.cpp */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
 		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
@@ -399,6 +400,8 @@
 		01EFACCD1DF205670049F26B /* tinyxmlparser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxmlparser.cpp; sourceTree = "<group>"; };
 		01EFACCF1DF205670049F26B /* ofxXmlSettings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxXmlSettings.cpp; sourceTree = "<group>"; };
 		01EFACD01DF205670049F26B /* ofxXmlSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxXmlSettings.h; sourceTree = "<group>"; };
+		01EFACD61DF209140049F26B /* BosonSource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BosonSource.cpp; sourceTree = "<group>"; };
+		01EFACD71DF209140049F26B /* BosonSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BosonSource.h; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E4B69B5B0A3A1756003C02F2 /* BosonDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BosonDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
@@ -943,6 +946,15 @@
 			path = src;
 			sourceTree = "<group>";
 		};
+		01EFACD51DF209140049F26B /* boson */ = {
+			isa = PBXGroup;
+			children = (
+				01EFACD61DF209140049F26B /* BosonSource.cpp */,
+				01EFACD71DF209140049F26B /* BosonSource.h */,
+			);
+			path = boson;
+			sourceTree = "<group>";
+		};
 		6948EE371B920CB800B5AC1A /* local_addons */ = {
 			isa = PBXGroup;
 			children = (
@@ -988,6 +1000,7 @@
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
+				01EFACD51DF209140049F26B /* boson */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -1194,6 +1207,7 @@
 				01EFABE01DF2054D0049F26B /* BaseJoint.cpp in Sources */,
 				01EFABAC1DF2054D0049F26B /* MvLayerUpCmd.cpp in Sources */,
 				01EFAB9F1DF2054D0049F26B /* SourceSelectionMode.cpp in Sources */,
+				01EFACD81DF209140049F26B /* BosonSource.cpp in Sources */,
 				01EFABAB1DF2054D0049F26B /* MvLayerDnCmd.cpp in Sources */,
 				01EFABC71DF2054D0049F26B /* Gui.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,

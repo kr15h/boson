@@ -2,14 +2,14 @@
 
 #include "ofMain.h"
 #include "ofxPiMapper.h"
-#include "BosonSource.h"
 
-class ofApp : public ofBaseApp{
+namespace boson{
+
+class BosonSource : public ofx::piMapper::FboSource{
 	public:
 		void setup();
 		void update();
 		void draw();
-	
-		ofxPiMapper mapper;
-		boson::BosonSource game;
 };
+
+} // namespace boson
