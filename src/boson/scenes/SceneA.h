@@ -2,6 +2,8 @@
 
 #include "ofMain.h"
 #include "BaseScene.h"
+#include "Teleport.h"
+#include "Collectible.h"
 
 namespace boson{
 namespace scenes{

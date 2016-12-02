@@ -2,7 +2,7 @@
 
 #include "ofMain.h"
 #include "ofxPiMapper.h"
-#include "BosonSource.h"
+#include "GameSource.h"
 
 class ofApp : public ofBaseApp{
 	public:
@@ -11,5 +11,5 @@ class ofApp : public ofBaseApp{
 		void draw();
 	
 		ofxPiMapper mapper;
-		boson::BosonSource game;
+		GameSource game;
 };
