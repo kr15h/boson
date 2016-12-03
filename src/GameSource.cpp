@@ -4,17 +4,18 @@ void GameSource::setup(){
 	name = "Game Source";
 	allocate(800, 800);
 	
-	title.setup();
-	game.setup();
+	titleState.setup();
+	gameState.setup();
+	endState.setup();
 	
-	state = &title;
+	activeState = &titleState;
 }
 
 void GameSource::update(){
-	state->update();
+	activeState->update();
 }
 
 void GameSource::draw(){
 	ofClear(0);
-	state->draw();
+	activeState->draw();
 }

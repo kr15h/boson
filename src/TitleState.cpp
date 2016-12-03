@@ -17,8 +17,6 @@ void TitleState::update(){
 }
 
 void TitleState::draw(){
-	ofSetColor(0);
-	
 	ofSetColor(ofColor::black);
 	ofDrawRectangle(box);
 	

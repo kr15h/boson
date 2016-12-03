@@ -31,8 +31,7 @@ void GameState::update(){
 	
 	// Check win condition
 	if(collectibles.size() <= 0){
-		cout << "Game Over" << endl;
-		ofSendMessage(ofMessage("YESS"));
+		ofSendMessage(ofMessage("GAME OVER"));
 	}
 }
 

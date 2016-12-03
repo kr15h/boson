@@ -16,9 +16,9 @@ void ofApp::draw(){
 }
 
 void ofApp::messageReceived(ofMessage & message){
-	cout << "Message received: " << message.message << endl;
-	
 	if(message.message == "START GAME"){
-		gameSource.state = &gameSource.game;
+		gameSource.activeState = &gameSource.gameState;
+	}else if(message.message == "GAME OVER"){
+		gameSource.activeState = &gameSource.endState;
 	}
 }

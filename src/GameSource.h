@@ -5,6 +5,7 @@
 #include "State.h"
 #include "TitleState.h"
 #include "GameState.h"
+#include "EndState.h"
 
 class GameSource : public ofx::piMapper::FboSource{
 	public:
@@ -12,8 +13,9 @@ class GameSource : public ofx::piMapper::FboSource{
 		void update();
 		void draw();
 	
-		TitleState title;
-		GameState game;
+		TitleState titleState;
+		GameState gameState;
+		EndState endState;
 	
-		State * state;
+		State * activeState;
 };
