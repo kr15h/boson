@@ -1,6 +1,6 @@
-#include "Title.h"
+#include "TitleState.h"
 
-void Title::setup(){
+void TitleState::setup(){
 	box = ofRectangle(0, 0, 800, 800);
 	
 	headerFont.setGlobalDpi(72);
@@ -10,13 +10,13 @@ void Title::setup(){
 	footerFont.load("Montserrat/Montserrat-Bold.ttf", 40);
 }
 
-void Title::update(){
+void TitleState::update(){
 	if(ofGetKeyPressed(' ')){
 		ofSendMessage(ofMessage("START GAME"));
 	}
 }
 
-void Title::draw(){
+void TitleState::draw(){
 	ofSetColor(0);
 	
 	ofSetColor(ofColor::black);

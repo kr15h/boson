@@ -1,12 +1,13 @@
 #pragma once
 
+#include "State.h"
 #include "ofMain.h"
 #include "Player.h"
 #include "Collectible.h"
 
-class Game{
+class GameState : public State{
 	public:
-		Game();
+		GameState();
 
 		void setup();
 		void update();

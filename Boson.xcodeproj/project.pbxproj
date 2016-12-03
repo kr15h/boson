@@ -126,8 +126,8 @@
 		01EFAD061DF324480049F26B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01EFACFF1DF324480049F26B /* main.cpp */; };
 		01EFAD071DF324480049F26B /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01EFAD001DF324480049F26B /* ofApp.cpp */; };
 		01EFAD081DF324480049F26B /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01EFAD011DF324480049F26B /* Player.cpp */; };
-		01EFAD091DF324480049F26B /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01EFAD021DF324480049F26B /* Game.cpp */; };
-		01F3F4561DF36DF900BE1F29 /* Title.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01F3F4551DF36DF900BE1F29 /* Title.cpp */; };
+		01EFAD091DF324480049F26B /* GameState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01EFAD021DF324480049F26B /* GameState.cpp */; };
+		01F3F4561DF36DF900BE1F29 /* TitleState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01F3F4551DF36DF900BE1F29 /* TitleState.cpp */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 /* End PBXBuildFile section */
 
@@ -407,15 +407,16 @@
 		01EFACF81DF324480049F26B /* GameSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSource.h; sourceTree = "<group>"; };
 		01EFACF91DF324480049F26B /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofApp.h; sourceTree = "<group>"; };
 		01EFACFA1DF324480049F26B /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
-		01EFACFB1DF324480049F26B /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		01EFACFB1DF324480049F26B /* GameState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameState.h; sourceTree = "<group>"; };
 		01EFACFD1DF324480049F26B /* Collectible.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Collectible.cpp; sourceTree = "<group>"; };
 		01EFACFE1DF324480049F26B /* GameSource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameSource.cpp; sourceTree = "<group>"; };
 		01EFACFF1DF324480049F26B /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		01EFAD001DF324480049F26B /* ofApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofApp.cpp; sourceTree = "<group>"; };
 		01EFAD011DF324480049F26B /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
-		01EFAD021DF324480049F26B /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
-		01F3F4541DF36DF900BE1F29 /* Title.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Title.h; sourceTree = "<group>"; };
-		01F3F4551DF36DF900BE1F29 /* Title.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Title.cpp; sourceTree = "<group>"; };
+		01EFAD021DF324480049F26B /* GameState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameState.cpp; sourceTree = "<group>"; };
+		01F3F4541DF36DF900BE1F29 /* TitleState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleState.h; sourceTree = "<group>"; };
+		01F3F4551DF36DF900BE1F29 /* TitleState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TitleState.cpp; sourceTree = "<group>"; };
+		01F3F4571DF3753B00BE1F29 /* State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E4B69B5B0A3A1756003C02F2 /* BosonDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BosonDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
@@ -1004,10 +1005,11 @@
 				01EFAD001DF324480049F26B /* ofApp.cpp */,
 				01EFACF81DF324480049F26B /* GameSource.h */,
 				01EFACFE1DF324480049F26B /* GameSource.cpp */,
-				01F3F4541DF36DF900BE1F29 /* Title.h */,
-				01F3F4551DF36DF900BE1F29 /* Title.cpp */,
-				01EFACFB1DF324480049F26B /* Game.h */,
-				01EFAD021DF324480049F26B /* Game.cpp */,
+				01F3F4571DF3753B00BE1F29 /* State.h */,
+				01F3F4541DF36DF900BE1F29 /* TitleState.h */,
+				01F3F4551DF36DF900BE1F29 /* TitleState.cpp */,
+				01EFACFB1DF324480049F26B /* GameState.h */,
+				01EFAD021DF324480049F26B /* GameState.cpp */,
 				01EFACFA1DF324480049F26B /* Player.h */,
 				01EFAD011DF324480049F26B /* Player.cpp */,
 				01EFACF71DF324480049F26B /* Collectible.h */,
@@ -1118,7 +1120,7 @@
 				01EFAC991DF205530049F26B /* DeviceFilter.cpp in Sources */,
 				01EFAC951DF205530049F26B /* ByteBufferUtils.cpp in Sources */,
 				01EFABDF1DF2054D0049F26B /* TriangleSurface.cpp in Sources */,
-				01EFAD091DF324480049F26B /* Game.cpp in Sources */,
+				01EFAD091DF324480049F26B /* GameState.cpp in Sources */,
 				01EFABA51DF2054D0049F26B /* ClearSurfacesCmd.cpp in Sources */,
 				01EFABD81DF2054D0049F26B /* BaseSurface.cpp in Sources */,
 				01EFACD41DF205670049F26B /* ofxXmlSettings.cpp in Sources */,
@@ -1228,7 +1230,7 @@
 				01EFACA11DF205530049F26B /* LinkFilter.cpp in Sources */,
 				01EFABDB1DF2054D0049F26B /* QuadSurface.cpp in Sources */,
 				01EFAB9B1DF2054D0049F26B /* Application.cpp in Sources */,
-				01F3F4561DF36DF900BE1F29 /* Title.cpp in Sources */,
+				01F3F4561DF36DF900BE1F29 /* TitleState.cpp in Sources */,
 				01EFAC941DF205530049F26B /* ByteBufferStream.cpp in Sources */,
 				01EFABC21DF2054D0049F26B /* SetTexMapDrawModeCmd.cpp in Sources */,
 				01EFACAA1DF205530049F26B /* snappy-stubs-internal.cc in Sources */,

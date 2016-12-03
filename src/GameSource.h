@@ -2,8 +2,9 @@
 
 #include "ofMain.h"
 #include "ofxPiMapper.h"
-#include "Game.h"
-#include "Title.h"
+#include "State.h"
+#include "TitleState.h"
+#include "GameState.h"
 
 class GameSource : public ofx::piMapper::FboSource{
 	public:
@@ -11,6 +12,8 @@ class GameSource : public ofx::piMapper::FboSource{
 		void update();
 		void draw();
 	
-		Title title;
-		Game game;
+		TitleState title;
+		GameState game;
+	
+		State * state;
 };

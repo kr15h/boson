@@ -1,10 +1,10 @@
-#include "Game.h"
+#include "GameState.h"
 
-Game::Game(){
+GameState::GameState(){
 	box = ofRectangle(0, 0, 800, 800);
 }
 
-void Game::setup(){
+void GameState::setup(){
 	Collectible * c1 = createCollectible(200, 300);
 	addCollectible(c1);
 	
@@ -18,7 +18,7 @@ void Game::setup(){
 	player.box.y = 50;
 }
 
-void Game::update(){
+void GameState::update(){
 	player.update();
 	
 	// Check if player collides with collectibles
@@ -36,7 +36,7 @@ void Game::update(){
 	}
 }
 
-void Game::draw(){
+void GameState::draw(){
 	// Draw background
 	ofPushStyle();
 	ofSetColor(ofColor::lightYellow);
@@ -52,18 +52,18 @@ void Game::draw(){
 	}
 }
 
-Collectible * Game::createCollectible(int x, int y){
+Collectible * GameState::createCollectible(int x, int y){
 	Collectible * c = new Collectible();
 	c->box.x = x;
 	c->box.y = y;
 	return c;
 }
 
-void Game::addCollectible(Collectible * c){
+void GameState::addCollectible(Collectible * c){
 	collectibles.push_back(c);
 }
 
-void Game::removeCollectible(Collectible * c){
+void GameState::removeCollectible(Collectible * c){
 	for(int i = 0; i < collectibles.size(); i++){
 		if(collectibles[i] == c){
 			collectibles.erase(collectibles.begin() + i);

@@ -6,16 +6,15 @@ void GameSource::setup(){
 	
 	title.setup();
 	game.setup();
+	
+	state = &title;
 }
 
 void GameSource::update(){
-
-	title.update();
-	game.update();
+	state->update();
 }
 
 void GameSource::draw(){
 	ofClear(0);
-	game.draw();
-	title.draw();
+	state->draw();
 }

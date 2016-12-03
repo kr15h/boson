@@ -13,5 +13,5 @@ class ofApp : public ofBaseApp{
 		void messageReceived(ofMessage & message);
 	
 		ofxPiMapper mapper;
-		GameSource game;
+		GameSource gameSource;
 };

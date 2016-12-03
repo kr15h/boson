@@ -1,8 +1,9 @@
 #pragma once
 
+#include "State.h"
 #include "ofMain.h"
 
-class Title{
+class TitleState : public State{
 	public:
 		void setup();
 		void update();
