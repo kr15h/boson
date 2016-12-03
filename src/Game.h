@@ -4,12 +4,11 @@
 #include "Player.h"
 #include "Collectible.h"
 
-class Stage{
+class Game{
 	public:
-		Stage();
+		Game();
 
 		void setup();
-		void reset();
 		void update();
 		void draw();
 	

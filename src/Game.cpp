@@ -1,10 +1,10 @@
-#include "Stage.h"
+#include "Game.h"
 
-Stage::Stage(){
+Game::Game(){
 	box = ofRectangle(0, 0, 800, 800);
 }
 
-void Stage::setup(){
+void Game::setup(){
 	Collectible * c1 = createCollectible(200, 300);
 	addCollectible(c1);
 	
@@ -18,12 +18,7 @@ void Stage::setup(){
 	player.box.y = 50;
 }
 
-void Stage::reset(){
-	collectibles.clear();
-	setup();
-}
-
-void Stage::update(){
+void Game::update(){
 	player.update();
 	
 	// Check if player collides with collectibles
@@ -41,7 +36,7 @@ void Stage::update(){
 	}
 }
 
-void Stage::draw(){
+void Game::draw(){
 	// Draw background
 	ofPushStyle();
 	ofSetColor(ofColor::lightYellow);
@@ -57,18 +52,18 @@ void Stage::draw(){
 	}
 }
 
-Collectible * Stage::createCollectible(int x, int y){
+Collectible * Game::createCollectible(int x, int y){
 	Collectible * c = new Collectible();
 	c->box.x = x;
 	c->box.y = y;
 	return c;
 }
 
-void Stage::addCollectible(Collectible * c){
+void Game::addCollectible(Collectible * c){
 	collectibles.push_back(c);
 }
 
-void Stage::removeCollectible(Collectible * c){
+void Game::removeCollectible(Collectible * c){
 	for(int i = 0; i < collectibles.size(); i++){
 		if(collectibles[i] == c){
 			collectibles.erase(collectibles.begin() + i);

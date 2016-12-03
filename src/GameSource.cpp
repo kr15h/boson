@@ -3,14 +3,19 @@
 void GameSource::setup(){
 	name = "Game Source";
 	allocate(800, 800);
-	stage.setup();
+	
+	title.setup();
+	game.setup();
 }
 
 void GameSource::update(){
-	stage.update();
+
+	title.update();
+	game.update();
 }
 
 void GameSource::draw(){
 	ofClear(0);
-	stage.draw();
+	game.draw();
+	title.draw();
 }
