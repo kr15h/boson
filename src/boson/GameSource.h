@@ -12,7 +12,7 @@ class GameSource : public ofx::piMapper::FboSource{
 		void update();
 		void draw();
 	
-		vector<boson::scenes::BaseScene *> scenes;
+		vector<BaseScene *> scenes;
 	
-		boson::actors::Player player;
+		Player player;
 };

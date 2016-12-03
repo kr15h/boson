@@ -1,19 +1,16 @@
 #include "SceneA.h"
 
-namespace boson{
-namespace scenes{
-
 void SceneA::setup(){
 	player = 0;
 	boundingBox = ofRectangle(0, 0, 400, 400);
 	
 	// Create Teleports
-	boson::actors::Teleport * t1 = new boson::actors::Teleport();
+	Teleport * t1 = new Teleport();
 	t1->boundingBox = ofRectangle(0, 100, 20, 200);
 	teleports.push_back(t1);
 	
 	// Create Collectibles
-	boson::actors::Collectible * c1 = new boson::actors::Collectible();
+	Collectible * c1 = new Collectible();
 	c1->boundingBox = ofRectangle(200, 160, 40, 40);
 	collectibles.push_back(c1);
 	
@@ -52,6 +49,3 @@ void SceneA::draw(){
 		collectibles[i]->draw();
 	}
 }
-
-} // namespace scenes
-} // namespace boson

@@ -1,8 +1,5 @@
 #include "Collectible.h"
 
-namespace boson{
-namespace actors{
-
 void Collectible::setup(){
 	type = ActorType::COLLECTIBLE;
 }
@@ -17,6 +14,3 @@ void Collectible::draw(){
 	ofDrawRectangle(boundingBox);
 	ofPopStyle();
 }
-
-} // namespace actors
-} // namespace boson

@@ -3,9 +3,6 @@
 #include "ofMain.h"
 #include "BaseActor.h"
 
-namespace boson{
-namespace actors{
-
 class Player : public BaseActor{
 	public:
 		void setup();
@@ -13,6 +10,3 @@ class Player : public BaseActor{
 		void draw();
 
 };
-
-} // namespace actors
-} // namespace boson

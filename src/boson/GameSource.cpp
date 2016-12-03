@@ -5,7 +5,7 @@ void GameSource::setup(){
 	
 	allocate(800, 800);
 	
-	boson::scenes::BaseScene * sceneA = new boson::scenes::SceneA();
+	BaseScene * sceneA = new SceneA();
 	scenes.push_back(sceneA);
 	
 	for(int i = 0; i < scenes.size(); i++){

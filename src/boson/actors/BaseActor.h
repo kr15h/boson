@@ -2,9 +2,6 @@
 
 #include "ofMain.h"
 
-namespace boson{
-namespace actors{
-
 enum ActorType{
 	PLAYER,
 	COLLECTIBLE,
@@ -24,6 +21,3 @@ class BaseActor{
 		ActorType type;
 	
 };
-
-} // namespace actors
-} // namespace boson

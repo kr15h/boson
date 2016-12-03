@@ -1,8 +1,5 @@
 #include "Teleport.h"
 
-namespace boson{
-namespace actors{
-
 void Teleport::setup(){
 	type = ActorType::TELEPORT;
 }
@@ -17,6 +14,3 @@ void Teleport::draw(){
 	ofDrawRectangle(boundingBox);
 	ofPopStyle();
 }
-
-} // namespace actors
-} // boson
