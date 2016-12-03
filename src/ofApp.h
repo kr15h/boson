@@ -10,6 +10,8 @@ class ofApp : public ofBaseApp{
 		void update();
 		void draw();
 	
+		void messageReceived(ofMessage & message);
+	
 		ofxPiMapper mapper;
 		GameSource game;
 };

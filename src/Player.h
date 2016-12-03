@@ -1,13 +1,16 @@
 #pragma once
 
 #include "ofMain.h"
-#include "BaseScene.h"
-#include "Teleport.h"
 #include "Collectible.h"
 
-class SceneA : public BaseScene{
+class Player{
 	public:
-		void setup();
+		Player();
+		
 		void update();
 		void draw();
+	
+		bool touches(Collectible * c);
+	
+		ofRectangle box;
 };

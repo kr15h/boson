@@ -81,7 +81,6 @@
 		01EFABE21DF2054D0049F26B /* RadioList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01EFAB6B1DF2054D0049F26B /* RadioList.cpp */; };
 		01EFABE31DF2054D0049F26B /* HomographyHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01EFAB6E1DF2054D0049F26B /* HomographyHelper.cpp */; };
 		01EFABE41DF2054D0049F26B /* TerminalListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01EFAB701DF2054D0049F26B /* TerminalListener.cpp */; };
-		01EFAC8F1DF205530049F26B /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 01EFAC2D1DF205530049F26B /* README.md */; };
 		01EFAC901DF205530049F26B /* lz4.c in Sources */ = {isa = PBXBuildFile; fileRef = 01EFAC301DF205530049F26B /* lz4.c */; };
 		01EFAC911DF205530049F26B /* Base64Encoding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01EFAC511DF205530049F26B /* Base64Encoding.cpp */; };
 		01EFAC921DF205530049F26B /* ByteBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01EFAC521DF205530049F26B /* ByteBuffer.cpp */; };
@@ -122,16 +121,13 @@
 		01EFACD21DF205670049F26B /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01EFACCC1DF205670049F26B /* tinyxmlerror.cpp */; };
 		01EFACD31DF205670049F26B /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01EFACCD1DF205670049F26B /* tinyxmlparser.cpp */; };
 		01EFACD41DF205670049F26B /* ofxXmlSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01EFACCF1DF205670049F26B /* ofxXmlSettings.cpp */; };
-		01EFACD81DF209140049F26B /* GameSource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01EFACD61DF209140049F26B /* GameSource.cpp */; };
-		01EFACE81DF215280049F26B /* BaseActor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01EFACE41DF215280049F26B /* BaseActor.cpp */; };
-		01EFACE91DF215280049F26B /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01EFACE61DF215280049F26B /* Player.cpp */; };
-		01EFACEF1DF226770049F26B /* BaseScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01EFACEB1DF226770049F26B /* BaseScene.cpp */; };
-		01EFACF01DF226770049F26B /* SceneA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01EFACED1DF226770049F26B /* SceneA.cpp */; };
-		01EFACF31DF22BE10049F26B /* Teleport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01EFACF21DF22BE10049F26B /* Teleport.cpp */; };
-		01EFACF61DF22E240049F26B /* Collectible.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01EFACF51DF22E240049F26B /* Collectible.cpp */; };
+		01EFAD041DF324480049F26B /* Collectible.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01EFACFD1DF324480049F26B /* Collectible.cpp */; };
+		01EFAD051DF324480049F26B /* GameSource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01EFACFE1DF324480049F26B /* GameSource.cpp */; };
+		01EFAD061DF324480049F26B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01EFACFF1DF324480049F26B /* main.cpp */; };
+		01EFAD071DF324480049F26B /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01EFAD001DF324480049F26B /* ofApp.cpp */; };
+		01EFAD081DF324480049F26B /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01EFAD011DF324480049F26B /* Player.cpp */; };
+		01EFAD091DF324480049F26B /* Stage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01EFAD021DF324480049F26B /* Stage.cpp */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
-		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
-		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -406,25 +402,19 @@
 		01EFACCD1DF205670049F26B /* tinyxmlparser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxmlparser.cpp; sourceTree = "<group>"; };
 		01EFACCF1DF205670049F26B /* ofxXmlSettings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxXmlSettings.cpp; sourceTree = "<group>"; };
 		01EFACD01DF205670049F26B /* ofxXmlSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxXmlSettings.h; sourceTree = "<group>"; };
-		01EFACD61DF209140049F26B /* GameSource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameSource.cpp; path = boson/GameSource.cpp; sourceTree = "<group>"; };
-		01EFACD71DF209140049F26B /* GameSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameSource.h; path = boson/GameSource.h; sourceTree = "<group>"; };
-		01EFACE41DF215280049F26B /* BaseActor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BaseActor.cpp; sourceTree = "<group>"; };
-		01EFACE51DF215280049F26B /* BaseActor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseActor.h; sourceTree = "<group>"; };
-		01EFACE61DF215280049F26B /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
-		01EFACE71DF215280049F26B /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
-		01EFACEB1DF226770049F26B /* BaseScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BaseScene.cpp; sourceTree = "<group>"; };
-		01EFACEC1DF226770049F26B /* BaseScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseScene.h; sourceTree = "<group>"; };
-		01EFACED1DF226770049F26B /* SceneA.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SceneA.cpp; sourceTree = "<group>"; };
-		01EFACEE1DF226770049F26B /* SceneA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneA.h; sourceTree = "<group>"; };
-		01EFACF11DF22BE10049F26B /* Teleport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teleport.h; sourceTree = "<group>"; };
-		01EFACF21DF22BE10049F26B /* Teleport.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Teleport.cpp; sourceTree = "<group>"; };
-		01EFACF41DF22E230049F26B /* Collectible.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Collectible.h; sourceTree = "<group>"; };
-		01EFACF51DF22E240049F26B /* Collectible.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Collectible.cpp; sourceTree = "<group>"; };
+		01EFACF71DF324480049F26B /* Collectible.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Collectible.h; sourceTree = "<group>"; };
+		01EFACF81DF324480049F26B /* GameSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSource.h; sourceTree = "<group>"; };
+		01EFACF91DF324480049F26B /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofApp.h; sourceTree = "<group>"; };
+		01EFACFA1DF324480049F26B /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		01EFACFB1DF324480049F26B /* Stage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stage.h; sourceTree = "<group>"; };
+		01EFACFD1DF324480049F26B /* Collectible.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Collectible.cpp; sourceTree = "<group>"; };
+		01EFACFE1DF324480049F26B /* GameSource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameSource.cpp; sourceTree = "<group>"; };
+		01EFACFF1DF324480049F26B /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		01EFAD001DF324480049F26B /* ofApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofApp.cpp; sourceTree = "<group>"; };
+		01EFAD011DF324480049F26B /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
+		01EFAD021DF324480049F26B /* Stage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Stage.cpp; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E4B69B5B0A3A1756003C02F2 /* BosonDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BosonDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
-		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
-		E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ofApp.h; path = src/ofApp.h; sourceTree = SOURCE_ROOT; };
 		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
 		E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = CoreOF.xcconfig; path = ../../../libs/openFrameworksCompiled/project/osx/CoreOF.xcconfig; sourceTree = SOURCE_ROOT; };
 		E4EB6923138AFD0F00A09F29 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
@@ -964,41 +954,6 @@
 			path = src;
 			sourceTree = "<group>";
 		};
-		01EFACD51DF209140049F26B /* boson */ = {
-			isa = PBXGroup;
-			children = (
-				01EFACE31DF215280049F26B /* actors */,
-				01EFACEA1DF226770049F26B /* scenes */,
-			);
-			path = boson;
-			sourceTree = "<group>";
-		};
-		01EFACE31DF215280049F26B /* actors */ = {
-			isa = PBXGroup;
-			children = (
-				01EFACE41DF215280049F26B /* BaseActor.cpp */,
-				01EFACE51DF215280049F26B /* BaseActor.h */,
-				01EFACF51DF22E240049F26B /* Collectible.cpp */,
-				01EFACF41DF22E230049F26B /* Collectible.h */,
-				01EFACE61DF215280049F26B /* Player.cpp */,
-				01EFACE71DF215280049F26B /* Player.h */,
-				01EFACF21DF22BE10049F26B /* Teleport.cpp */,
-				01EFACF11DF22BE10049F26B /* Teleport.h */,
-			);
-			path = actors;
-			sourceTree = "<group>";
-		};
-		01EFACEA1DF226770049F26B /* scenes */ = {
-			isa = PBXGroup;
-			children = (
-				01EFACEB1DF226770049F26B /* BaseScene.cpp */,
-				01EFACEC1DF226770049F26B /* BaseScene.h */,
-				01EFACED1DF226770049F26B /* SceneA.cpp */,
-				01EFACEE1DF226770049F26B /* SceneA.h */,
-			);
-			path = scenes;
-			sourceTree = "<group>";
-		};
 		6948EE371B920CB800B5AC1A /* local_addons */ = {
 			isa = PBXGroup;
 			children = (
@@ -1041,12 +996,17 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
-				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
-				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
-				01EFACD61DF209140049F26B /* GameSource.cpp */,
-				01EFACD71DF209140049F26B /* GameSource.h */,
-				01EFACD51DF209140049F26B /* boson */,
+				01EFACFF1DF324480049F26B /* main.cpp */,
+				01EFACF91DF324480049F26B /* ofApp.h */,
+				01EFAD001DF324480049F26B /* ofApp.cpp */,
+				01EFACF81DF324480049F26B /* GameSource.h */,
+				01EFACFE1DF324480049F26B /* GameSource.cpp */,
+				01EFACFB1DF324480049F26B /* Stage.h */,
+				01EFAD021DF324480049F26B /* Stage.cpp */,
+				01EFACFA1DF324480049F26B /* Player.h */,
+				01EFAD011DF324480049F26B /* Player.cpp */,
+				01EFACF71DF324480049F26B /* Collectible.h */,
+				01EFACFD1DF324480049F26B /* Collectible.cpp */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -1153,6 +1113,7 @@
 				01EFAC991DF205530049F26B /* DeviceFilter.cpp in Sources */,
 				01EFAC951DF205530049F26B /* ByteBufferUtils.cpp in Sources */,
 				01EFABDF1DF2054D0049F26B /* TriangleSurface.cpp in Sources */,
+				01EFAD091DF324480049F26B /* Stage.cpp in Sources */,
 				01EFABA51DF2054D0049F26B /* ClearSurfacesCmd.cpp in Sources */,
 				01EFABD81DF2054D0049F26B /* BaseSurface.cpp in Sources */,
 				01EFACD41DF205670049F26B /* ofxXmlSettings.cpp in Sources */,
@@ -1171,7 +1132,6 @@
 				01EFACC51DF2055A0049F26B /* ofxSlider.cpp in Sources */,
 				01EFABDA1DF2054D0049F26B /* HexagonSurface.cpp in Sources */,
 				01EFABBF1DF2054D0049F26B /* SetNextSourceCmd.cpp in Sources */,
-				01EFAC8F1DF205530049F26B /* README.md in Sources */,
 				01EFABD11DF2054D0049F26B /* MediaServer.cpp in Sources */,
 				01EFABAE1DF2054D0049F26B /* MvSurfaceVertCmd.cpp in Sources */,
 				01EFABB81DF2054D0049F26B /* SelPrevSurfaceCmd.cpp in Sources */,
@@ -1185,7 +1145,6 @@
 				01EFABD51DF2054D0049F26B /* ImageSource.cpp in Sources */,
 				01EFABA71DF2054D0049F26B /* DeselectSurfaceCmd.cpp in Sources */,
 				01EFAB9E1DF2054D0049F26B /* ProjectionMappingMode.cpp in Sources */,
-				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				01EFABA41DF2054D0049F26B /* AddSurfaceCmd.cpp in Sources */,
 				01EFAB9C1DF2054D0049F26B /* ApplicationBaseMode.cpp in Sources */,
 				01EFAC9A1DF205530049F26B /* DirectoryFilter.cpp in Sources */,
@@ -1204,6 +1163,7 @@
 				01EFACA51DF205530049F26B /* RegexPathFilter.cpp in Sources */,
 				01EFACA61DF205530049F26B /* SearchPath.cpp in Sources */,
 				01EFACC61DF2055A0049F26B /* ofxSliderGroup.cpp in Sources */,
+				01EFAD061DF324480049F26B /* main.cpp in Sources */,
 				01EFACC21DF2055A0049F26B /* ofxGuiGroup.cpp in Sources */,
 				01EFAC961DF205530049F26B /* ByteBufferWriter.cpp in Sources */,
 				01EFACD11DF205670049F26B /* tinyxml.cpp in Sources */,
@@ -1214,7 +1174,6 @@
 				01EFAC9E1DF205530049F26B /* FileExtensionFilter.cpp in Sources */,
 				01EFACA81DF205530049F26B /* URIEncoding.cpp in Sources */,
 				01EFACD21DF205670049F26B /* tinyxmlerror.cpp in Sources */,
-				01EFACF31DF22BE10049F26B /* Teleport.cpp in Sources */,
 				01EFACC41DF2055A0049F26B /* ofxPanel.cpp in Sources */,
 				01EFACC71DF2055A0049F26B /* ofxToggle.cpp in Sources */,
 				01EFABC61DF2054D0049F26B /* TranslateCanvasCmd.cpp in Sources */,
@@ -1225,8 +1184,10 @@
 				01EFABB71DF2054D0049F26B /* SelNextVertexCmd.cpp in Sources */,
 				01EFABE31DF2054D0049F26B /* HomographyHelper.cpp in Sources */,
 				01EFABBA1DF2054D0049F26B /* SelPrevVertexCmd.cpp in Sources */,
+				01EFAD071DF324480049F26B /* ofApp.cpp in Sources */,
 				01EFABE11DF2054D0049F26B /* CircleJoint.cpp in Sources */,
 				01EFABAF1DF2054D0049F26B /* MvTexCoordCmd.cpp in Sources */,
+				01EFAD041DF324480049F26B /* Collectible.cpp in Sources */,
 				01EFABC11DF2054D0049F26B /* SetSourceCmd.cpp in Sources */,
 				01EFABBE1DF2054D0049F26B /* SetApplicationModeCmd.cpp in Sources */,
 				01EFABD31DF2054D0049F26B /* BaseSource.cpp in Sources */,
@@ -1235,7 +1196,6 @@
 				01EFABDE1DF2054D0049F26B /* SurfaceStack.cpp in Sources */,
 				01EFACA91DF205530049F26B /* snappy-sinksource.cc in Sources */,
 				01EFAC9B1DF205530049F26B /* DirectoryUtils.cpp in Sources */,
-				01EFACE91DF215280049F26B /* Player.cpp in Sources */,
 				01EFAC981DF205530049F26B /* Compression.cpp in Sources */,
 				01EFABA91DF2054D0049F26B /* DuplicateSurfaceCmd.cpp in Sources */,
 				01EFABCD1DF2054D0049F26B /* TextureEditorWidget.cpp in Sources */,
@@ -1251,26 +1211,22 @@
 				01EFACA01DF205530049F26B /* HiddenFileFilter.cpp in Sources */,
 				01EFABD41DF2054D0049F26B /* FboSource.cpp in Sources */,
 				01EFABAD1DF2054D0049F26B /* MvSelectionCmd.cpp in Sources */,
+				01EFAD081DF324480049F26B /* Player.cpp in Sources */,
 				01EFABB21DF2054D0049F26B /* RmSurfaceCmd.cpp in Sources */,
 				01EFABE01DF2054D0049F26B /* BaseJoint.cpp in Sources */,
 				01EFABAC1DF2054D0049F26B /* MvLayerUpCmd.cpp in Sources */,
-				01EFACF01DF226770049F26B /* SceneA.cpp in Sources */,
 				01EFAB9F1DF2054D0049F26B /* SourceSelectionMode.cpp in Sources */,
-				01EFACD81DF209140049F26B /* GameSource.cpp in Sources */,
-				01EFACF61DF22E240049F26B /* Collectible.cpp in Sources */,
 				01EFABAB1DF2054D0049F26B /* MvLayerDnCmd.cpp in Sources */,
 				01EFABC71DF2054D0049F26B /* Gui.cpp in Sources */,
-				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 				01EFABBD1DF2054D0049F26B /* SelVertexCmd.cpp in Sources */,
+				01EFAD051DF324480049F26B /* GameSource.cpp in Sources */,
 				01EFACA11DF205530049F26B /* LinkFilter.cpp in Sources */,
-				01EFACE81DF215280049F26B /* BaseActor.cpp in Sources */,
 				01EFABDB1DF2054D0049F26B /* QuadSurface.cpp in Sources */,
 				01EFAB9B1DF2054D0049F26B /* Application.cpp in Sources */,
 				01EFAC941DF205530049F26B /* ByteBufferStream.cpp in Sources */,
 				01EFABC21DF2054D0049F26B /* SetTexMapDrawModeCmd.cpp in Sources */,
 				01EFACAA1DF205530049F26B /* snappy-stubs-internal.cc in Sources */,
 				01EFABCB1DF2054D0049F26B /* SourcesEditorWidget.cpp in Sources */,
-				01EFACEF1DF226770049F26B /* BaseScene.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

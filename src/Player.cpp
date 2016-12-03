@@ -1,31 +1,37 @@
 #include "Player.h"
 
-void Player::setup(){
-	type = ActorType::PLAYER;
-	boundingBox = ofRectangle(75, 100, 80, 80);
+Player::Player(){
+	box = ofRectangle(0, 0, 80, 80);
 }
 
 void Player::update(){
 	if(ofGetKeyPressed(OF_KEY_UP)){
-		boundingBox.y--;
+		box.y--;
 	}
 	
 	if(ofGetKeyPressed(OF_KEY_DOWN)){
-		boundingBox.y++;
+		box.y++;
 	}
 	
 	if(ofGetKeyPressed(OF_KEY_LEFT)){
-		boundingBox.x--;
+		box.x--;
 	}
 	
 	if(ofGetKeyPressed(OF_KEY_RIGHT)){
-		boundingBox.x++;
+		box.x++;
 	}
 }
 
 void Player::draw(){
 	ofPushStyle();
 	ofSetColor(ofColor::cyan);
-	ofDrawRectangle(boundingBox);
+	ofDrawCircle(
+		box.x + box.width / 2,
+		box.y + box.height / 2,
+		box.width / 2);
 	ofPopStyle();
+}
+
+bool Player::touches(Collectible * c){
+	return box.intersects(c->box);
 }
