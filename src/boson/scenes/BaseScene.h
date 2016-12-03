@@ -3,6 +3,8 @@
 #include "ofMain.h"
 #include "BaseActor.h"
 #include "Player.h"
+#include "Collectible.h"
+#include "Teleport.h"
 
 namespace boson{
 namespace scenes{
@@ -18,8 +20,8 @@ class BaseScene{
 		ofRectangle boundingBox;
 	
 		boson::actors::Player * player;
-	
-		vector<boson::actors::BaseActor *> actors;
+		vector<boson::actors::Collectible *> collectibles;
+		vector<boson::actors::Teleport *> teleports;
 };
 
 } // namespace scenes

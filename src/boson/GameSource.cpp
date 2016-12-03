@@ -17,20 +17,25 @@ void GameSource::setup(){
 }
 
 void GameSource::update(){
+	// Looping through scenes
 	for(int i = 0; i < scenes.size(); i++){
 		scenes[i]->update();
 		
-		for(int j = 0; j < scenes[i]->actors.size(); j++){
-			if(player.intersects(*scenes[i]->actors[j])){
-				if(scenes[i]->actors[j]->type ==
-				boson::actors::ActorType::COLLECTIBLE){
-					cout << "Hit Collectible" << endl;
+		// Loop through collectibles of the scene
+		for(int j = 0; j < scenes[i]->collectibles.size(); j++){
+			if(player.intersects(*scenes[i]->collectibles[j])){
+				cout << "Hit Collectible, removing..." << endl;
+				scenes[i]->collectibles.erase(scenes[i]->collectibles.begin() + j);
+				if(j > 0){
+					j--;
+					continue;
 				}
-				
-				if(scenes[i]->actors[j]->type ==
-				boson::actors::ActorType::TELEPORT){
-					cout << "Hit Teleport" << endl;
-				}
+			}
+		}
+		
+		for(int j = 0; j < scenes[i]->teleports.size(); j++){
+			if(player.intersects(*scenes[i]->teleports[j])){
+				cout << "Hit Teleport, teleporting..." << endl;
 			}
 		}
 	}

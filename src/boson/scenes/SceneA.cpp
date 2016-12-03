@@ -10,16 +10,21 @@ void SceneA::setup(){
 	// Create Teleports
 	boson::actors::Teleport * t1 = new boson::actors::Teleport();
 	t1->boundingBox = ofRectangle(0, 100, 20, 200);
-	actors.push_back(t1);
+	teleports.push_back(t1);
 	
 	// Create Collectibles
 	boson::actors::Collectible * c1 = new boson::actors::Collectible();
 	c1->boundingBox = ofRectangle(200, 160, 40, 40);
-	actors.push_back(c1);
+	collectibles.push_back(c1);
 	
-	// Setup all Actors
-	for(int i = 0; i < actors.size(); i++){
-		actors[i]->setup();
+	// Setup all Teleports
+	for(int i = 0; i < teleports.size(); i++){
+		teleports[i]->setup();
+	}
+	
+	// Setup all Collectibles
+	for(int i = 0; i < collectibles.size(); i++){
+		collectibles[i]->setup();
 	}
 }
 
@@ -39,8 +44,12 @@ void SceneA::draw(){
 		player->draw();
 	}
 	
-	for(int i = 0; i < actors.size(); i++){
-		actors[i]->draw();
+	for(int i = 0; i < teleports.size(); i++){
+		teleports[i]->draw();
+	}
+	
+	for(int i = 0; i < collectibles.size(); i++){
+		collectibles[i]->draw();
 	}
 }
 
