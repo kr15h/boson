@@ -4,6 +4,7 @@
 #include "ofMain.h"
 #include "Player.h"
 #include "Collectible.h"
+#include "Teleport.h"
 
 class GameState : public State{
 	public:
@@ -21,4 +22,5 @@ class GameState : public State{
 	
 		Player player;
 		vector<Collectible *> collectibles;
+		Teleport * teleport;
 };

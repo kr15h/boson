@@ -2,6 +2,7 @@
 
 GameState::GameState(){
 	box = ofRectangle(0, 0, 800, 800);
+	teleport = 0;
 }
 
 void GameState::setup(){
@@ -29,8 +30,17 @@ void GameState::update(){
 		}
 	}
 	
+	// Check teleport contition
+	if(teleport == 0 && collectibles.size() <= 0){
+		teleport = new Teleport();
+		teleport->box.x = box.width - teleport->box.width;
+		teleport->box.y = (box.height - teleport->box.height) / 2.0f;
+	}
+	
 	// Check win condition
-	if(collectibles.size() <= 0){
+	if(teleport != 0 && player.box.intersects(teleport->box)){
+		delete teleport;
+		teleport = 0;
 		ofSendMessage(ofMessage("GAME OVER"));
 	}
 }
@@ -48,6 +58,11 @@ void GameState::draw(){
 	// Draw all collectibles
 	for(int i = 0; i < collectibles.size(); i++){
 		collectibles[i]->draw();
+	}
+	
+	// Draw teleport
+	if(teleport != 0){
+		teleport->draw();
 	}
 }
 
