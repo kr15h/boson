@@ -19,6 +19,7 @@ void ofApp::messageReceived(ofMessage & message){
 	if(message.message == "START GAME"){
 		gameSource.activeState = &gameSource.gameState;
 	}else if(message.message == "GAME OVER"){
+		gameSource.setup();
 		gameSource.activeState = &gameSource.endState;
 	}
 }
