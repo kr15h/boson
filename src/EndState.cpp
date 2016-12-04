@@ -10,6 +10,8 @@ void EndState::setup(){
 	fontSm.load("Montserrat/Montserrat-Regular.ttf", 20);
 	fontMd.load("Montserrat/Montserrat-Bold.ttf", 40);
 	fontLg.load("Montserrat/Montserrat-Bold.ttf", 100);
+	
+	gameTime = 0;
 }
 
 void EndState::update(){
@@ -24,7 +26,7 @@ void EndState::draw(){
 	
 	ofRectangle headerBox = fontMd.getStringBoundingBox("GAME OVER", 0, 0);
 	ofRectangle midBox1 = fontSm.getStringBoundingBox("YOUR TIME", 0, 0);
-	ofRectangle timeBox = fontLg.getStringBoundingBox(ofToString(102), 0, 0);
+	ofRectangle timeBox = fontLg.getStringBoundingBox(ofToString((int)gameTime), 0, 0);
 	ofRectangle midBox2 = fontSm.getStringBoundingBox("SECONDS", 0, 0);
 	ofRectangle footerBox1 = fontMd.getStringBoundingBox("HIT SPACE", 0, 0);
 	ofRectangle footerBox2 = fontMd.getStringBoundingBox("TO PLAY AGAIN", 0, 0);
@@ -38,7 +40,7 @@ void EndState::draw(){
 		(box.width - midBox1.width) / 2.0f,
 		box.height / 2.0f - 50);
 	
-	fontLg.drawString(ofToString(102),
+	fontLg.drawString(ofToString((int)gameTime),
 		(box.width - timeBox.width) / 2.0f,
 		(box.height - timeBox.height) / 2.0f + timeBox.height);
 	
@@ -57,4 +59,8 @@ void EndState::draw(){
 	ofSetColor(ofColor::skyBlue);
 	ofDrawCircle(box.width / 4.0f, box.height / 2.0f, 50);
 	ofDrawCircle((box.width / 4.0f) * 3.0f, box.height / 2.0f, 50);
+}
+
+void EndState::setTime(float t){
+	gameTime = t;
 }

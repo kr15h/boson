@@ -14,4 +14,6 @@ class ofApp : public ofBaseApp{
 	
 		ofxPiMapper mapper;
 		GameSource gameSource;
+	
+		float startTime;
 };
